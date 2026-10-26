@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermiqt | Pure Skincare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">DERMIQT</a>
+
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="shop-btn" id="open-cart">
+            Bag (<span id="cart-count">0</span>)
+        </button>
+    </header>
+    
+<main>
+    <section class="hero" id="menu">
+        <div class="hero-content">
+            <p class="tagline">Care for your skin, naturally</p>
+
+            <h1>Care Beyond<br>Boundaries</h1>
+
+            <p class="hero-description">
+                Discover natural skincare designed
+                to bring out your skin's natural glow.
+            </p>
+
+            <button class="hero-btn" onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' })">
+                Shop Now
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="images/skincare-model.avif" alt="Skincare model">
+        </div>
+
+    </section>
+
+
+   <section class="products" id="products">
+        <div class="products-heading">
+            <p>OUR COLLECTION</p>
+            <h2>Pure Skincare<br>Elevated Naturally</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <span class="product-label">BESTSELLER</span>
+                <img src="images/serum.png" alt="Daily Glow Serum">
+                <h3>Daily Glow Serum</h3>
+                <p>Lightweight care for radiant skin.</p>
+                <p class="product-price">₹699</p>
+                <button class="add-btn">Add to Bag</button>
+            </div>
+            <div class="product-card">
+                <span class="product-label">DAILY ESSENTIAL</span>
+                <img src="images/cream.png" alt="Pure Hydration Cream">
+                <h3>Pure Hydration</h3>
+                <p>Simple care, naturally nourishing.</p>
+                <p class="product-price">₹549</p>
+                <button class="add-btn">Add to Bag</button>
+            </div>
+        </div>
+    </section>
+    <section class="brand-story" id="about">
+        <div class="story-content">
+            <p class="story-label">OUR PHILOSOPHY</p>
+            <h2>Less, but better.<br>Care, naturally.</h2>
+            <p>
+                We believe skincare should feel simple.
+                Thoughtfully chosen ingredients and gentle
+                routines help make everyday care meaningful.
+            </p>
+            <a href="about.html" class="story-btn">
+                Discover Our Story
+            </a>
+        </div>
+        <div class="story-highlight">
+            <h3>Nature meets simplicity</h3>
+            <p>Everyday essentials, designed with care.</p>
+        </div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="footer-brand">
+        <h2>DERMIQT</h2>
+        <p>Care for your skin, naturally.</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="about.html">Our Story</a>
+    </div>
+
+    <p class="copyright">© 2026 Dermiqt. All rights reserved.</p>
+</footer>
+<div class="cart-overlay" id="cart-overlay">
+    <div class="cart-panel">
+        <button class="close-cart" id="close-cart">&times;</button>
+        <p class="cart-label">YOUR SELECTION</p>
+        <h2>Your Bag</h2>
+
+        <div id="cart-items">
+            <p>Your bag is empty.</p>
+        </div>
+
+        <div class="cart-summary">
+            <p>Subtotal <span>₹<span id="cart-total">0</span></span></p>
+            <button class="continue-shopping" id="continue-shopping">
+                Continue Shopping
+            </button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
